@@ -79,7 +79,7 @@ const Experience = () => {
 
             <Details
               position="Cybersecurity Trainer(Intership)"
-              company="Careera"
+              company="Careerera"
               companyLink="https://www.careerera.com/cyber-security/pgp-in-cyber-security-and-ethical-hacking"
               time="June 2021- March 2022"
               address="Work From Home"

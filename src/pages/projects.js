@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import proj1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
+import proj1 from "../../public/images/projects/TryHackMe_StayHigh.png";
 import proj2 from "../../public/images/projects/nft-collection-website-cover-image.jpg";
 import proj3 from "../../public/images/projects/fashion-studio-website.jpg";
 import proj4 from "../../public/images/projects/portfolio-cover-image.jpg";
@@ -15,7 +15,7 @@ import TransitionEffect from "@/components/TransitionEffect";
 
 const FramerImage = motion(Image);
 
-const FeaturedProject = ({ type, title, summary, img, link, github }) => {
+const FeaturedProject = ({ type, title, summary, img, link}) => {
 
   return (
     <article
@@ -37,7 +37,7 @@ lg:p-8 xs:rounded-2xl  xs:rounded-br-3xl xs:p-4
       >
         <FramerImage
           src={img}
-          className="h-auto w-full"
+          className="ml-12"
           alt={title}
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
@@ -64,14 +64,6 @@ lg:p-8 xs:rounded-2xl  xs:rounded-br-3xl xs:p-4
           {summary}
         </p>
         <div className="mt-2 flex items-center">
-          <Link
-            href={github}
-            target={"_blank"}
-            className="w-10"
-            aria-label="Crypto Screener Application github link"
-          >
-            <GithubIcon />
-          </Link>
           <Link
             href={link}
             target={"_blank"}
@@ -172,15 +164,27 @@ export default function Projects() {
       </Head>
 
       <TransitionEffect />
+      
       <main
         className={`mb-16  flex w-full flex-col items-center justify-center dark:text-light`}
       >
         <Layout className="pt-16">
           <AnimatedText
-            text="Coming Soon!!"
+            text="My Projectscapes"
             className="mb-16 !text-8xl !leading-tight lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
           />
-          
+
+          <div className=" grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
+            <div className="col-span-12">
+              <FeaturedProject
+                type="TryHackMe"
+                title="TryHackMe VM Walkthrough: [StayHigh]"
+                summary="Explore the world of cybersecurity in my first TryHackMe room! This CTF takes you through techniques like enumeration, exploitation, brute-forcing, and privilege escalation. Access the room on TryHackMe and sharpen your skills in this hands-on experience."
+                img={proj1}
+                link="https://tryhackme.com/room/stayhighh"
+              />
+            </div>
+          </div>
           
         </Layout>
       </main>
