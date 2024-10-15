@@ -66,7 +66,7 @@ const Experience = () => {
               company="Funded Futues Family"
               time="June 2024 - Augest 2024"
               address="Los Angeles, CA"
-              work="Worked on a team responsible for installing Ubuntus 20.04LTS on Windows Enterprise, added network drivers for ECU communication, and authored a guide for Ubuntu installation on Hyper-V."
+              work="I'm a Software Developer with expertise in DevOps, AWS, Next.js, TailwindCSS, and Linux. I specialize in building fast, SEO-friendly web applications using server-side rendering (SSR) and static site generation (SSG) with Next.js, and crafting responsive UIs with TailwindCSS. My experience with AWS and DevOps includes automating deployments, enhancing scalability, and streamlining workflows using services like S3, EC2, and Lambda. I've developed in Linux environments to optimize system performance and manage servers efficiently. This combination of frontend and cloud infrastructure has enabled me to deliver robust, scalable, and high-performing web solutions."
             />
           <Details
               position="Linux and Virtual Machine Administrator(Temporary)"
